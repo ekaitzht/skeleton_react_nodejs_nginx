@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 
-app.post('/address'[
+app.post('/address',[
     // username must be an email
     check('street').exists(),
     check('streetNumber').exists(),
@@ -34,12 +34,10 @@ app.post('/address'[
     res.json({
         valid: true
     })
-    
 });
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
 
-https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
 
