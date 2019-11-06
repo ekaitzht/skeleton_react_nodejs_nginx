@@ -11,7 +11,7 @@ app.use(
   })
 );
 
-app.get("/hello", function(req, res) {
+app.get("/planes", function(req, res) {
   res.json({
     valid: true
   });
